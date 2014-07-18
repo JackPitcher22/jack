@@ -162,10 +162,10 @@ d3.json("world.json", function(error, world) {
                            }
       
       
-         else {d3.select("#tooltip").classed("hidden", false)//overiding the css styling to hide it 
+         else {   if (prices[d.id][1] === null) {};     d3.select("#tooltip").classed("hidden", false)//overiding the css styling to hide it 
               .html( '<h4>' + d.properties.name+'</h4>'+'$'+ prices[d.id][1]); //.html - d3 method - takes the selection and inserts }
                             }
-       if (prices[d.id][1] === null) {}
+     
     })
                             
            .on("mouseout", function()  {

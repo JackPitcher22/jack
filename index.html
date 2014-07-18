@@ -136,7 +136,7 @@ d3.json("world.json", function(error, world) {
    .attr("class", function(d){ return "subunit "+ d.id; })
    .attr("d", path)
    .attr("fill", function(d) { 
-     if (window.location.href === "http://jackpitcher22-122867.euw1-2.nitrousbox.com:8888/#retail") { 
+     if (window.location.href === "http://jackpitcher22.github.io/jack/#retail") { 
        return (prices[d.id] && prices[d.id][0]) ? colorScale(prices[d.id][0]) : "#f1eef6"}
      else      {return (prices[d.id] && prices[d.id][0]) ? colorScale(prices[d.id][1]) : "#f1eef6"};
       
@@ -154,7 +154,7 @@ d3.json("world.json", function(error, world) {
        return  */    
       
 
-        if (window.location.href === "http://jackpitcher22-122867.euw1-2.nitrousbox.com:8888/#retail")   {
+        if (window.location.href === "http://jackpitcher22.github.io/jack/#retail")   {
 
             d3.select("#tooltip").classed("hidden", false)//overiding the css styling to hide it 
               .html( '<h4>' + d.properties.name+'</h4>'+'$'+ prices[d.id][0]); //.html - d3 method - takes the selection and inserts 
